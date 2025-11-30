@@ -10,6 +10,16 @@
       type="image/x-icon"
       href="./images/logo.svg" />
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
       href="./css/style.css" />
     <title>Modern bakery</title>
@@ -70,20 +80,20 @@
       <!-- section 2 -->
       <section id="traditions-section">
         <ul class="advanatges-list">
-          <li>High demand on the market</li>
-          <li>Affordable formats</li>
-          <li>Experienced management team</li>
+          <li class="advanatges-item">High demand on the market</li>
+          <li class="advanatges-item">Affordable formats</li>
+          <li class="advanatges-item">Experienced management team</li>
         </ul>
         <h2 class="section-title">A new format for traditions</h2>
-        <p>
-          <span>shop bakery</span> - is a bakery that has taken all the best and
-          preserved the taste of traditional baking and the naturalness of
-          ingredients.
+        <p class="traditions-text">
+          <span class="brand uppercase">shop bakery</span> - is a bakery that
+          has taken all the best and preserved the taste of traditional baking
+          and the naturalness of ingredients.
         </p>
-        <p>
+        <p class="traditions-text">
           We work like the most famous chains —
-          <span>5 minutes and your order is ready</span>. And our bakeries also
-          have stylish designs and high-quality service!
+          <span class="brand">5 minutes and your order is ready</span>. And our
+          bakeries also have stylish designs and high-quality service!
         </p>
         <img
           src="./images/baker-man.jpg"
@@ -100,7 +110,7 @@
               <img
                 src="./images/nastya-chef.jpg"
                 alt="nastya-chef img" />
-              <h3>Nastya</h3>
+              <h3 class="chef-title">Nastya</h3>
               <p>Hello, I'm Nastya!</p>
               <p>
                 For 10 years now, I have been bringing interesting and delicious
@@ -114,7 +124,7 @@
               <img
                 src="./images/vlad-chef.jpg"
                 alt="vlad-chef img" />
-              <h3>Vlad</h3>
+              <h3 class="chef-title">Vlad</h3>
               <p>Hello, I'm Vlad!</p>
               <p>
                 I have been a pastry chef for 18 years. SHOP BEKERY is our
@@ -132,38 +142,44 @@
         <ul>
           <li>
             <article>
-              <h3>Walrus</h3>
-              <p>Area: up to 120 m2</p>
-              <p>Menu: extensive menu</p>
-              <p>
-                Staff: 2 sales assistants/cashiers, 2 bakers, 2 baker's
-                assistants, 2 waiters/waitresses
-              </p>
-              <p>Seating: available</p>
+              <h3 class="format-title">Walrus</h3>
+              <div class="format-text">
+                <p>Area: up to 120 m2</p>
+                <p>Menu: extensive menu</p>
+                <p>
+                  Staff: 2 sales assistants/cashiers, 2 bakers, 2 baker's
+                  assistants, 2 waiters/waitresses
+                </p>
+                <p>Seating: available</p>
+              </div>
             </article>
           </li>
           <li>
             <article>
-              <h3>Horseshoe</h3>
-              <p>Area: up to 120 m2</p>
-              <p>Menu: extensive menu</p>
-              <p>
-                Staff: 2 sales assistants/cashiers, 2 bakers, 2 baker's
-                assistants, 2 waiters/waitresses
-              </p>
-              <p>Seating: available</p>
+              <h3 class="format-title">Horseshoe</h3>
+              <div class="format-text">
+                <p>Area: up to 120 m2</p>
+                <p>Menu: extensive menu</p>
+                <p>
+                  Staff: 2 sales assistants/cashiers, 2 bakers, 2 baker's
+                  assistants, 2 waiters/waitresses
+                </p>
+                <p>Seating: available</p>
+              </div>
             </article>
           </li>
           <li>
             <article>
-              <h3>Handlebar</h3>
-              <p>Area: up to 120 m2</p>
-              <p>Menu: extensive menu</p>
-              <p>
-                Staff: 2 sales assistants/cashiers, 2 bakers, 2 baker's
-                assistants, 2 waiters/waitresses
-              </p>
-              <p>Seating: available</p>
+              <h3 class="format-title">Handlebar</h3>
+              <div class="format-text">
+                <p>Area: up to 120 m2</p>
+                <p>Menu: extensive menu</p>
+                <p>
+                  Staff: 2 sales assistants/cashiers, 2 bakers, 2 baker's
+                  assistants, 2 waiters/waitresses
+                </p>
+                <p>Seating: available</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -171,6 +187,13 @@
       <!-- section 5 -->
       <section id="contacts-section">
         <h2 class="section-title">Join our group of bakeries</h2>
+        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <!-- Here will be form -->
+        <button
+          class="button"
+          type="button">
+          Request a call
+        </button>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636304352814!2d30.48869837701284!3d50.456677571593325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce6371aa0fdb%3A0x447fbee89abf1047!2z0JrRg9GF0L3RjyDQn9C-0LvQu9C4!5e0!3m2!1sru!2sua!4v1763993128801!5m2!1sru!2sua"
           width="603"
@@ -190,25 +213,58 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Chefs</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li>
+            <a
+              class="link"
+              href="#"
+              >Our traditions</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="#"
+              >Chefs</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="#"
+              >Formats</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="#"
+              >Contacts</a
+            >
+          </li>
         </ul>
       </nav>
       <address>
         <ul>
           <li>
-            <a href="tel:+38(096)0000007">+ 38 (096) 000 00 07</a>
-          </li>
-          <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a
+              class="address-link"
+              href="tel:+38(096)0000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
             <a
+              class="address-link"
+              href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="address-link"
               target="_blank"
               href="https://maps.app.goo.gl/K23Zc3HZRQsAnRCw7">
-              Україна, м. Київ, вул. Січових Стрільців 54
+              Ukraine, Kyiv, Sichovykh Striltsiv Street 54
             </a>
           </li>
           <li>
@@ -222,8 +278,12 @@
             </a>
           </li>
         </ul>
-        <a href="#"> Політика конфіденційності </a>
-        <p>&copy; 2025 Дані захищені</p>
+        <a
+          class="address-link"
+          href="#"
+          >Privacy policy
+        </a>
+        <p class="address-copyright">&copy; 2025 Data protected</p>
       </address>
     </footer>
   </body>
