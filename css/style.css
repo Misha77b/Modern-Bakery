@@ -91,7 +91,30 @@ address {
 
 .link:hover {
 	color: var(--color-brand-normal);
-	font-weight: 600;
+}
+
+/* Header */
+.header-container {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	gap: 40px;
+}
+
+.header-menu {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	gap: 64px;
+}
+
+.header-menu-item {
 }
 
 /* Hero section */
@@ -112,9 +135,15 @@ address {
 }
 
 /* Advanatges section */
-.advanatges-list {
-	color: var(--color-primary-light);
+.advantages-section {
+	padding: 16px 0;
 	background-color: var(--color-brand-normal);
+}
+
+.advanatges-list {
+	display: flex;
+	justify-content: space-between;
+	color: var(--color-primary-light);
 }
 
 .advanatges-item {
@@ -134,6 +163,23 @@ address {
 }
 
 /* Traditions section */
+.traditions-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.traditions-conent {
+	max-width: 710px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.traditions-text.limited {
+	max-width: 355px;
+}
+
 .traditions-section {
 	padding-top: 96px;
 }
@@ -177,6 +223,22 @@ address {
 	font-size: 14px;
 	font-weight: 300;
 	color: var(--color-primary-light);
+}
+
+.formats-list {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.format-card {
+	padding: 24px;
+	border-radius: 16px;
+	border: 1px solid lightgray;
+}
+
+.formats-item {
+	flex-basis: calc((100% - 40px) / 3);
 }
 
 /* Contacts section */
