@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Modern bakery</title>
   </head>
   <body>
@@ -135,6 +135,7 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/walrus-format.jpg" alt="walrus-format" />
                   <h3 class="format-title">Walrus</h3>
                   <div class="format-text">
                     <p>Area: up to 120 m2</p>
@@ -146,6 +147,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/horseshoe-format.jpg" alt="horseshoe-format" />
                   <h3 class="format-title">Horseshoe</h3>
                   <div class="format-text">
                     <p>Area: up to 120 m2</p>
@@ -157,6 +159,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/handlebar-format.jpg" alt="handlebar-format" />
                   <h3 class="format-title">Handlebar</h3>
                   <div class="format-text">
                     <p>Area: up to 120 m2</p>
@@ -184,9 +187,23 @@
                 Join our group <br />
                 of bakeries
               </h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- Here will be form -->
-              <button class="button" type="button">Request a call</button>
+              <p>Fill out the form so we can get in touch with you!</p>
+              <form name="contact-form" autocomplete="off">
+                <label class="form-label visually-hidden" for="user-name">Name</label>
+                <input required class="form-input" id="user-name" placeholder="Name" type="text" />
+
+                <label class="form-label visually-hidden" for="user-tel">Phone number</label>
+                <input required class="form-input" id="user-tel" placeholder="Phone number" type="tel" />
+
+                <label class="form-label visually-hidden" for="user-email">Email</label>
+                <input required class="form-input" id="user-email" name="user-email" placeholder="Email" type="email" />
+
+                <button class="form-button button" type="submit">Request a call</button>
+                <p class="from-terms">
+                  By clicking this button, <br />
+                  I agree to the <a class="form-terms-link" href="#">privacy policy</a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -266,6 +283,31 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Request a call</h2>
+        <p>Submit your request, and one of our specialists will contact you!</p>
+        <form name="modal-form" autocomplete="off">
+          <label class="form-label visually-hidden" for="user-name">Name</label>
+          <input required class="form-input" id="user-name" placeholder="Name" type="text" />
+
+          <label class="form-label visually-hidden" for="user-tel">Phone number</label>
+          <input
+            required
+            class="form-input"
+            id="user-tel"
+            placeholder="Phone number"
+            type="tel"
+            pattern="^\+[0-9]{12}"
+          />
+
+          <label class="form-label visually-hidden" for="user-email">Email</label>
+          <input required class="form-input" id="user-email" name="user-email" placeholder="Email" type="email" />
+
+          <button class="form-button button" type="submit">Request a call</button>
+          <p class="from-terms">
+            By clicking this button, <br />
+            I agree to the <a class="form-terms-link" href="#">privacy policy</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./script/modal.js"></script>

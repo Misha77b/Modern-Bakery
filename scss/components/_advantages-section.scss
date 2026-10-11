@@ -1,0 +1,29 @@
+.advantages-section {
+  padding: 16px 0;
+  background-color: var(--color-brand-normal);
+}
+
+.advanatges-list {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-primary-light);
+}
+
+.advanatges-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 64px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
